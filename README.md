@@ -14,3 +14,8 @@ AndroidManifest.xml
 ```
 
 소스코드에 대한 설명은 [유튜브](https://youtu.be/8hKczn0-Hkw)를 참조하세요.
+
+간혹 카카오 로그인 한 후에도 계속 로그인 버큰이 보인다는 분들이 계십니다. 터미널에서 생성한 해시키 대신 아래와 같이 MainActivity의 onCreate에서 직접 코드로 해시키를 생성하여 사용해 보시기 바랍니다.
+```
+Log.i(TAG, "debug keyhash is " + Utility.INSTANCE.getKeyHash(this));
+```
